@@ -26,6 +26,9 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright tests
+      env:
+        USER_EMAIL: ${{ secrets.USER_EMAIL }}
+        USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
       run: npx playwright test
 
     - name: Upload Playwright HTML Report
