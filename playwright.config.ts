@@ -15,7 +15,7 @@ export default defineConfig({
     ['list'],
   ],
   use: {
-    baseURL: process.env.BASE_URL || 'https://practicesoftwaretesting.com',
+    baseURL: process.env.BASE_URL,
     testIdAttribute: 'data-test',
 
     trace: 'on-first-retry',
