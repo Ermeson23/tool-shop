@@ -87,7 +87,7 @@ npx playwright test --ui
 
 - Rodar um arquivo de teste específico:
 ```
-npx playwright test tests/checkout.spec.ts
+npx playwright test tests/e2e/login.spec.ts
 ```
 
 - Visualizar o Relatório HTML da última execução:
