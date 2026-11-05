@@ -7,7 +7,7 @@ export class UserApiHelper {
     constructor(request: APIRequestContext) {
         this.request = request;
 
-        const baseApiUrl = process.env.BASE_API_URL;
+        const baseApiUrl = process.env.BASE_API_URL || 'https://api.practicesoftwaretesting.com';
         if (!baseApiUrl) {
             throw new Error('BASE_API_URL não está definido no arquivo .env');
         }
